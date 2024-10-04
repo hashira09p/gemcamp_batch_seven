@@ -1,0 +1,7 @@
+<div class="container">
+  <%= form_with model: @products do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+    <%= form.submit %>
+  <% end %>
+</div>
