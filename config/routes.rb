@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'products#index'
+  root 'posts#index'
+  # get 'posts/index'
 
-  resources 'products'
+  resources 'posts'
 end
