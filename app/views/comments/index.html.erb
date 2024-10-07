@@ -1,0 +1,15 @@
+<%= link_to 'New Comment', new_post_comment_path, class: 'btn btn-primary' %>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Content</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @comments.each do |comment| %>
+    <tr>
+      <td><%= comment.content %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
